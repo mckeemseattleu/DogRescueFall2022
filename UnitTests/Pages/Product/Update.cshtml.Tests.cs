@@ -30,11 +30,11 @@ namespace UnitTests.Pages.Product.Update
             // Arrange
 
             // Act
-            pageModel.OnGet("selinazawacki-shirt");
+            pageModel.OnGet("Ester_dog");
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual("Floppy Crop", pageModel.Product.Title);
+            Assert.AreEqual("Ester - A Young Female Mixed Breed Dog  available for Adoption", pageModel.Product.Title);
         }
         #endregion OnGet
 
