@@ -78,7 +78,7 @@ namespace ContosoCrafts.WebSite.Services
                 return null;
             }
 
-            productData.Title = data.Title;
+            productData.Name = data.Name;
             productData.Description = data.Description;
             productData.Url = data.Url;
             productData.Image = data.Image;
