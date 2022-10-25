@@ -9,13 +9,16 @@
 
 <h1>Read</h1>
 
+
+
 <div class="content">
-    <h5 class="title" id="productTitle">@Model.Product.Name</h5>
+    <h5 class="title" id="productTitle">Dog Name: @Model.Product.Name</h5>
 
-    <img class="card-img" src='@Model.Product.Image' alt='Image for @Model.Product.Name'>
+    <img class="card-img" style="width:400px" src='@Model.Product.Image' alt='Image for @Model.Product.Name'>
 
-    <p class="card-text">@Model.Product.Description</p>
+    <p class="card-text">Description: @Model.Product.Description</p>
 
+    <p class="card-text">DogType: @Model.Product.DogType</p>
 </div>
 
 <br />
