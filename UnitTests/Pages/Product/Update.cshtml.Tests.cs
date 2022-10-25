@@ -46,7 +46,7 @@ namespace UnitTests.Pages.Product.Update
             pageModel.Product = new ProductModel
             {
                 Id = "selinazawacki-moon",
-                Title = "title",
+                Name = "Name",
                 Description = "description",
                 Url = "url",
                 Image = "image"
@@ -67,7 +67,7 @@ namespace UnitTests.Pages.Product.Update
             pageModel.Product = new ProductModel
             {
                 Id = "bogus",
-                Title = "bogus",
+                Name = "bogus",
                 Description = "bogus",
                 Url = "bogus",
                 Image = "bougs"
