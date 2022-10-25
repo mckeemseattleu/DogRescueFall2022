@@ -34,7 +34,7 @@ namespace UnitTests.Pages.Product.Update
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual("Ester - A Young Female Mixed Breed Dog  available for Adoption", pageModel.Product.Title);
+            Assert.AreEqual("Ester - A Young Female Mixed Breed Dog  available for Adoption", pageModel.Product.Name);
         }
         #endregion OnGet
 
