@@ -46,7 +46,7 @@ namespace UnitTests
         {
             MockWebHostEnvironment = new Mock<IWebHostEnvironment>();
             MockWebHostEnvironment.Setup(m => m.EnvironmentName).Returns("Hosting:UnitTestEnvironment");
-            MockWebHostEnvironment.Setup(m => m.WebRootPath).Returns("../../../../src/bin/Debug/net5.0/wwwroot");
+            MockWebHostEnvironment.Setup(m => m.WebRootPath).Returns("../../../../src/bin/Debug/net6.0/wwwroot");
 
             MockWebHostEnvironment.Setup(m => m.ContentRootPath).Returns("./data/");
 
