@@ -117,7 +117,7 @@ namespace ContosoCrafts.WebSite.Services
             var data = new ProductModel()
             {
                 Id = System.Guid.NewGuid().ToString(),
-                Title = "Enter Title",
+                Name = "Enter Name",
                 Description = "Enter Description",
                 Url = "Enter URL",
                 Image = "",
