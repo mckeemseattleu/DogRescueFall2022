@@ -15,7 +15,8 @@
       5
     ],
     "DogType": "Terrior",
-    "CommentList": []
+    "CommentList": [],
+    "Name": "Ester - A Young Female Mixed Breed Dog  available for Adoption"
   },
   {
     "Id": "Thomas_dog",
@@ -26,7 +27,8 @@
     "Description": "Thomas is house-broken and available for immediate adoption.",
     "Ratings": null,
     "DogType": "Mixed ???",
-    "CommentList": []
+    "CommentList": [],
+    "Name": "Thomas - A Young male Mixed Breed Dog  available for Adoption"
   },
   {
     "Id": "jenlooper-light2",
@@ -37,6 +39,7 @@
     "Description": "Cassidy is house-broken and available for immediate adoption.",
     "Ratings": null,
     "DogType": "German Shepherd",
-    "CommentList": []
+    "CommentList": [],
+    "Name": "Cassidy - A Young male German Shepherd available for Adoption"
   }
 ]
