@@ -35,5 +35,15 @@
     "Description": "Cassidy is house-broken and available for immediate adoption.",
     "Ratings": null,
     "DogType": "German Shepherd"
+  },
+  {
+    "Id": "jenlooper-light3",
+    "Maker": "jenlooper2",
+    "Name": "Duncan - A Young male puppy German Shepherd available for Adoption",
+    "img": "https://www.pupdogrescue.org/graphics/adopt-a-pup.jpg",
+    "Url": "https://cdn.rescuegroups.org/151/pictures/animals/18572/18572902/90405419.jpg?width=500",
+    "Description": "Duncan is house-broken and available for immediate adoption.",
+    "Ratings": null,
+    "DogType": "German Shepherd"
   }
 ]
