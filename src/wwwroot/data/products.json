@@ -4,7 +4,7 @@
     "Maker": "@jenlooper",
     "Name": "Ester - A Young Female Mixed Breed Dog  available for Adoption",
     "img": "https://cdn.rescuegroups.org/5922/pictures/animals/17094/17094275/80946921.jpg",
-    "Url": "https://www.hackster.io/agent-hawking-1/the-quantified-cactus-an-easy-plant-soil-moisture-sensor-e65393",
+    "Url": "https://www.hackster.io/agent-hawking-1",
     "Description": "Ester is house-broken and available for immediate adoption.",
     "Ratings": [
       5,
@@ -14,8 +14,7 @@
       1,
       5
     ],
-    "DogType": "Terrior",
-    "CommentList": []
+    "DogType": "Terrior"
   },
   {
     "Id": "Thomas_dog",
@@ -25,9 +24,7 @@
     "Url": "https://cdn.rescuegroups.org/151/pictures/animals/17537/17537592/87789555.jpg?width=500",
     "Description": "Thomas is house-broken and available for immediate adoption.",
     "Ratings": null,
-    "DogType": "Mixed ???",
-    "CommentList": []
-
+    "DogType": "Mixed ???"
   },
   {
     "Id": "jenlooper-light2",
@@ -37,8 +34,6 @@
     "Url": "https://cdn.rescuegroups.org/151/pictures/animals/18572/18572902/90405419.jpg?width=500",
     "Description": "Cassidy is house-broken and available for immediate adoption.",
     "Ratings": null,
-    "DogType": "German Shepherd",
-    "CommentList": []
-
+    "DogType": "German Shepherd"
   }
 ]
