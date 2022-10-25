@@ -15,8 +15,6 @@
       5
     ],
     "DogType": "Terrior",
-    "Quantity": null,
-    "Price": 0,
     "CommentList": []
   },
   {
@@ -28,8 +26,6 @@
     "Description": "Thomas is house-broken and available for immediate adoption.",
     "Ratings": null,
     "DogType": "Mixed ???",
-    "Quantity": null,
-    "Price": 0,
     "CommentList": []
   },
   {
@@ -41,8 +37,6 @@
     "Description": "Cassidy is house-broken and available for immediate adoption.",
     "Ratings": null,
     "DogType": "German Shepherd",
-    "Quantity": null,
-    "Price": 0,
     "CommentList": []
   }
 ]
