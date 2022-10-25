@@ -2,9 +2,9 @@
   {
     "Id": "Ester_dog",
     "Maker": "@jenlooper",
+    "Name": "Ester - A Young Female Mixed Breed Dog  available for Adoption",
     "img": "https://cdn.rescuegroups.org/5922/pictures/animals/17094/17094275/80946921.jpg",
     "Url": "https://www.hackster.io/agent-hawking-1/the-quantified-cactus-an-easy-plant-soil-moisture-sensor-e65393",
-    "Title": "Ester - A Young Female Mixed Breed Dog  available for Adoption",
     "Description": "Ester is house-broken and available for immediate adoption.",
     "Ratings": [
       5,
@@ -15,31 +15,30 @@
       5
     ],
     "DogType": "Terrior",
-    "CommentList": [],
-    "Name": "Ester - A Young Female Mixed Breed Dog  available for Adoption"
+    "CommentList": []
   },
   {
     "Id": "Thomas_dog",
     "Maker": "jenlooper",
+    "Name": "Thomas - A Young male Mixed Breed Dog  available for Adoption",
     "img": "https://cdn.rescuegroups.org/151/pictures/animals/17537/17537592/87789555.jpg?width=500",
     "Url": "https://cdn.rescuegroups.org/151/pictures/animals/17537/17537592/87789555.jpg?width=500",
-    "Title": "Thomas - A Young male Mixed Breed Dog  available for Adoption",
     "Description": "Thomas is house-broken and available for immediate adoption.",
     "Ratings": null,
     "DogType": "Mixed ???",
-    "CommentList": [],
-    "Name": "Thomas - A Young male Mixed Breed Dog  available for Adoption"
+    "CommentList": []
+
   },
   {
     "Id": "jenlooper-light2",
     "Maker": "jenlooper2",
+    "Name": "Cassidy - A Young male German Shepherd available for Adoption",
     "img": "https://cdn.rescuegroups.org/151/pictures/animals/18572/18572902/90405419.jpg?width=500",
     "Url": "https://cdn.rescuegroups.org/151/pictures/animals/18572/18572902/90405419.jpg?width=500",
-    "Title": "Cassidy - A Young male German Shepherd available for Adoption",
     "Description": "Cassidy is house-broken and available for immediate adoption.",
     "Ratings": null,
     "DogType": "German Shepherd",
-    "CommentList": [],
-    "Name": "Cassidy - A Young male German Shepherd available for Adoption"
+    "CommentList": []
+
   }
 ]
