@@ -27,11 +27,11 @@ namespace UnitTests.Pages.Product.Read
             // Arrange
 
             // Act
-            pageModel.OnGet("jenlooper-cactus");
+            pageModel.OnGet("Thomas_dog");
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual("The Quantified Cactus: An Easy Plant Soil Moisture Sensor", pageModel.Product.Title);
+            Assert.AreEqual("Thomas - A Young male Mixed Breed Dog  available for Adoption", pageModel.Product.Title);
         }
         #endregion OnGet
     }
