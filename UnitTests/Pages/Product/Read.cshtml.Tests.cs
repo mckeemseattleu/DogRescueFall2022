@@ -25,14 +25,23 @@ namespace UnitTests.Pages.Product.Read
         public void OnGet_Valid_Should_Return_Products()
         {
             // Arrange
-
             // Act
             pageModel.OnGet("Thomas_dog");
-
             // Assert
-            Assert.AreEqual(true, pageModel.ModelState.IsValid);
             Assert.AreEqual("Thomas - A Young male Mixed Breed Dog  available for Adoption", pageModel.Product.Name);
         }
+
+        [Test]
+        public void OnGet_Valid_Should_Return_Products_ToString()
+        {
+            // Arrange
+            pageModel.OnGet("Thomas_dog");
+            // Act
+            string dogString = pageModel.Product.ToString();
+            // Assert
+            Assert.IsNotNull(dogString);
+         }
+
         #endregion OnGet
     }
 }
