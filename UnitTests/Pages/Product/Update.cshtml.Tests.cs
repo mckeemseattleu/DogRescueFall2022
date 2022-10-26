@@ -5,6 +5,7 @@ using NUnit.Framework;
 
 using ContosoCrafts.WebSite.Pages.Product;
 using ContosoCrafts.WebSite.Models;
+using System;
 
 namespace UnitTests.Pages.Product.Update
 {
@@ -36,6 +37,19 @@ namespace UnitTests.Pages.Product.Update
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
             Assert.AreEqual("Ester - A Young Female Mixed Breed Dog  available for Adoption", pageModel.Product.Name);
         }
+
+        [Test]
+        public void OnGet_InValid_Should__Not_Return_Products()
+        {
+            // Arrange
+
+            // Act
+            pageModel.OnGet("Ester_dog1");
+
+            // Assert
+
+            Assert.IsNull(pageModel.Product);
+         }
         #endregion OnGet
 
         #region OnPostAsync
@@ -43,15 +57,9 @@ namespace UnitTests.Pages.Product.Update
         public void OnPostAsync_Valid_Should_Return_Products()
         {
             // Arrange
-            pageModel.Product = new ProductModel
-            {
-                Id = "selinazawacki-moon",
-                Name = "Name",
-                Description = "description",
-                Url = "url",
-                Image = "image"
-            };
 
+            
+            pageModel.OnGet("Ester_dog");
             // Act
             var result = pageModel.OnPost() as RedirectToPageResult;
 
@@ -82,6 +90,31 @@ namespace UnitTests.Pages.Product.Update
             // Assert
             Assert.AreEqual(false, pageModel.ModelState.IsValid);
         }
+
+        [Test]
+        public void OnPostAsync_Bogus_Value_Return_Null_Page()
+        {
+            // Arrange
+            pageModel.Product = new ProductModel
+            {
+                Id = "bogus",
+                Name = "bogus",
+                Description = "bogus",
+                Url = "bogus",
+                Image = "bougs"
+            };
+
+            // Force an invalid error state
+
+
+            // Act
+            var result = pageModel.OnPost() as ActionResult;
+
+            // Assert
+            Assert.IsNull(result);
+
+        }
+
         #endregion OnPostAsync
     }
 }
