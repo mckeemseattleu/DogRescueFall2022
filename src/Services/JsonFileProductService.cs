@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Hosting;
 
 namespace ContosoCrafts.WebSite.Services
 {
-   public class JsonFileProductService
+    public class JsonFileProductService
     {
         public JsonFileProductService(IWebHostEnvironment webHostEnvironment)
         {
@@ -25,7 +25,7 @@ namespace ContosoCrafts.WebSite.Services
 
         public IEnumerable<ProductModel> GetProducts()
         {
-            using(var jsonFileReader = File.OpenText(JsonFileName))
+            using (var jsonFileReader = File.OpenText(JsonFileName))
             {
                 return JsonSerializer.Deserialize<ProductModel[]>(jsonFileReader.ReadToEnd(),
                     new JsonSerializerOptions
@@ -35,33 +35,6 @@ namespace ContosoCrafts.WebSite.Services
             }
         }
 
-        public void AddRating(string productId, int rating)
-        {
-            var products = GetProducts();
-
-            if(products.First(x => x.Id == productId).Ratings == null)
-            {
-                products.First(x => x.Id == productId).Ratings = new int[] { rating };
-            }
-            else
-            {
-                var ratings = products.First(x => x.Id == productId).Ratings.ToList();
-                ratings.Add(rating);
-                products.First(x => x.Id == productId).Ratings = ratings.ToArray();
-            }
-
-            using(var outputStream = File.OpenWrite(JsonFileName))
-            {
-                JsonSerializer.Serialize<IEnumerable<ProductModel>>(
-                    new Utf8JsonWriter(outputStream, new JsonWriterOptions
-                    {
-                        SkipValidation = true,
-                        Indented = true
-                    }), 
-                    products
-                );
-            }
-        }
 
         /// <summary>
         /// Find the data record
@@ -106,30 +79,5 @@ namespace ContosoCrafts.WebSite.Services
                 );
             }
         }
-
-        /// <summary>
-        /// Create a new product using default values
-        /// After create the user can update to set values
-        /// </summary>
-        /// <returns></returns>
-        public ProductModel CreateProduct()
-        {
-            var data = new ProductModel()
-            {
-                Id = System.Guid.NewGuid().ToString(),
-                Name = "Enter Name",
-                Description = "Enter Description",
-                Url = "Enter URL",
-                Image = "",
-            };
-
-            // Get the current set, and append the new record to it
-            var dataSet = GetProducts();
-            dataSet = dataSet.Append(data);
-
-            SaveProducts(dataSet);
-
-            return data;
-        }
     }
-}
+ }
