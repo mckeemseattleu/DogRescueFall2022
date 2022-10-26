@@ -4,16 +4,8 @@
     "Maker": "@jenlooper",
     "Name": "Ester - A Young Female Mixed Breed Dog  available for Adoption",
     "img": "https://cdn.rescuegroups.org/5922/pictures/animals/17094/17094275/80946921.jpg",
-    "Url": "https://www.hackster.io/agent-hawking-1",
+    "Url": "https://www.hackster.io/agent-hawking",
     "Description": "Ester is house-broken and available for immediate adoption.",
-    "Ratings": [
-      5,
-      5,
-      3,
-      2,
-      1,
-      5
-    ],
     "DogType": "Terrior"
   },
   {
@@ -23,7 +15,6 @@
     "img": "https://cdn.rescuegroups.org/151/pictures/animals/17537/17537592/87789555.jpg?width=500",
     "Url": "https://cdn.rescuegroups.org/151/pictures/animals/17537/17537592/87789555.jpg?width=500",
     "Description": "Thomas is house-broken and available for immediate adoption.",
-    "Ratings": null,
     "DogType": "Mixed ???"
   },
   {
@@ -33,7 +24,6 @@
     "img": "https://cdn.rescuegroups.org/151/pictures/animals/18572/18572902/90405419.jpg?width=500",
     "Url": "https://cdn.rescuegroups.org/151/pictures/animals/18572/18572902/90405419.jpg?width=500",
     "Description": "Cassidy is house-broken and available for immediate adoption.",
-    "Ratings": null,
     "DogType": "German Shepherd"
   },
   {
@@ -43,7 +33,6 @@
     "img": "https://www.pupdogrescue.org/graphics/adopt-a-pup.jpg",
     "Url": "https://cdn.rescuegroups.org/151/pictures/animals/18572/18572902/90405419.jpg?width=500",
     "Description": "Duncan is house-broken and available for immediate adoption.",
-    "Ratings": null,
     "DogType": "German Shepherd"
   }
 ]
