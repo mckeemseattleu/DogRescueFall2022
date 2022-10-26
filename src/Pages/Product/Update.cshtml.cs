@@ -54,7 +54,10 @@ namespace ContosoCrafts.WebSite.Pages.Product
                 return Page();
             }
 
-            ProductService.UpdateData(Product);
+            if (ProductService.UpdateData(Product) == null)
+            {
+                return null;
+            }
 
             return RedirectToPage("./Index");
         }
