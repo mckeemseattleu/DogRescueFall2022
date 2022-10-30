@@ -34,5 +34,14 @@
     "Url": "https://cdn.rescuegroups.org/151/pictures/animals/18572/18572902/90405419.jpg?width=500",
     "Description": "Duncan is house-broken and available for immediate adoption.",
     "DogType": "German Shepherd"
+  },
+  {
+    "Id": "396b92b7-7228-4f22-b118-1acaf8735994",
+    "Maker": null,
+    "Name": "Louis - A wonderful dog",
+    "img": "https://images.ctfassets.net/sfnkq8lmu5d7/t48zVjThVqkphASHSbb2X/7bf6e9b8b571737bcd2ad0963369402f/The_Wildest_Editorial_Adopting-Adult-Rescue-Dog_AdobeStock_303804010.jpg",
+    "Url": "https://images.ctfassets.net/sfnkq8lmu5d7/t48zVjThVqkphASHSbb2X/7bf6e9b8b571737bcd2ad0963369402f/The_Wildest_Editorial_Adopting-Adult-Rescue-Dog_AdobeStock_303804010.jpg",
+    "Description": "Lous is a dog that is ready to be adopted",
+    "DogType": "Golden Retriever"
   }
 ]
