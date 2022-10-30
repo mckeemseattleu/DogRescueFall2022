@@ -27,6 +27,12 @@
         </div>
 
         <div class="form-group">
+            <label asp-for="Product.DogType" class="control-label"></label>
+            <input asp-for="Product.DogType" class="form-control" />
+            <span asp-validation-for="Product.DogType" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
             <label asp-for="Product.Url" class="control-label"></label>
             <input asp-for="Product.Url" class="form-control" />
             <span asp-validation-for="Product.Url" class="text-danger"></span>
