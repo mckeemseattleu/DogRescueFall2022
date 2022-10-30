@@ -54,6 +54,7 @@ namespace ContosoCrafts.WebSite.Services
             productData.Name = data.Name;
             productData.Description = data.Description;
             productData.Url = data.Url;
+            productData.DogType = data.DogType;
             productData.Image = data.Image;
 
             SaveProducts(products);
