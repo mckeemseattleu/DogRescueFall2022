@@ -61,6 +61,26 @@ namespace ContosoCrafts.WebSite.Services
             return productData;
         }
 
+
+        /// <summary>
+        /// Save All products data to storage
+        /// </summary>
+        private void SaveData(IEnumerable<ProductModel> products)
+        {
+
+            using (var outputStream = File.Create(JsonFileName))
+            {
+                JsonSerializer.Serialize<IEnumerable<ProductModel>>(
+                    new Utf8JsonWriter(outputStream, new JsonWriterOptions
+                    {
+                        SkipValidation = true,
+                        Indented = true
+                    }),
+                    products
+                );
+            }
+        }
+
         /// <summary>
         /// Save All products data to storage
         /// </summary>
@@ -79,5 +99,43 @@ namespace ContosoCrafts.WebSite.Services
                 );
             }
         }
+
+        public IEnumerable<ProductModel> GetAllData()
+        {
+            using (var jsonFileReader = File.OpenText(JsonFileName))
+            {
+                return JsonSerializer.Deserialize<ProductModel[]>(jsonFileReader.ReadToEnd(),
+                    new JsonSerializerOptions
+                    {
+                        PropertyNameCaseInsensitive = true
+                    });
+            }
+        }
+        /// <summary>
+        /// Create a new product using default values
+        /// After create the user can update to set values
+        /// </summary>
+        /// <returns></returns>
+        public ProductModel CreateData()
+        {
+            var data = new ProductModel()
+            {
+                Id = System.Guid.NewGuid().ToString(),
+                Name = "Enter Name",
+                Description = "Enter Description",
+                Url = "Enter URL",
+                Image = "",
+            };
+
+            // Get the current set, and append the new record to it
+            var dataSet = GetAllData();
+            dataSet = dataSet.Append(data);
+
+            SaveData(dataSet);
+
+            return data;
+        }
+
+
     }
- }
+}
