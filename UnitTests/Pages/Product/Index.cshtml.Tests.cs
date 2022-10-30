@@ -36,7 +36,8 @@ namespace UnitTests.Pages.Product.Index
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual(4, pageModel.Products.ToList().Count);
+            // Change this value if you modify the data source
+            Assert.AreEqual(7, pageModel.Products.ToList().Count);
         }
         #endregion OnGet
     }
