@@ -27,26 +27,27 @@ namespace UnitTests.Pages.Product.Delete
 
         #region OnGet
         [Test]
-        public void OnGet_Valid_Should_Return_Products()
+        public void OnGet_Valid_Should_Return_ProductToDelete()
         {
             // Arrange
 
             // Act
-            pageModel.OnGet("selinazawacki-shirt");
+            pageModel.OnGet("Ester_dog");
 
             // Assert
             Assert.AreEqual(true, pageModel.ModelState.IsValid);
-            Assert.AreEqual("Floppy Crop", pageModel.Product.Name);
+            Assert.AreEqual("Ester - A Young Female Mixed Breed Dog  available for Adoption", pageModel.Product.Name);
         }
         #endregion OnGet
 
         #region OnPost
         [Test]
-        public void OnPost_Valid_Should_Return_Products()
+        public void OnPost_Valid_Should_DeleteProduct()
         {
             // Arrange
 
-            // First Create the product to delete
+            // First Create the product to delete. By calling CreateData
+            // We will create a product that "
             pageModel.Product = TestHelper.ProductService.CreateData();
             pageModel.Product.Name = "Example to Delete";
             TestHelper.ProductService.UpdateData(pageModel.Product);
