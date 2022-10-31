@@ -121,7 +121,7 @@ namespace ContosoCrafts.WebSite.Services
         {
             var data = new ProductModel()
             {
-                Id = System.Guid.NewGuid().ToString(),
+                Id = "111", // It will eventually be updated.
                 Name = "Enter Name",
                 Description = "Enter Description",
                 Url = "Enter URL",
